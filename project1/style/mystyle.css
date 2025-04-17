@@ -1,0 +1,115 @@
+/* General Styles */
+* {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    justify-content: space-between; /* Left and right alignment */
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 40px; /* Adds spacing */
+}
+
+/* Left side content */
+.main-content {
+    flex: 3; /* Takes up more space */
+    text-align: left; /* Ensures left-aligned text */
+}
+
+/* Right side content (Sidebar) */
+.sidebar {
+    flex: 1; /* Smaller width */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end; /* Push content to the right */
+    text-align: right;
+    position: sticky;
+    top: 10px; /* Keeps it near the top */
+}
+
+/* Introduction Section */
+.intro {
+    text-align: center; /* Left align instead of center */
+    padding: 20px;
+}
+
+h1.name {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Section Headers */
+h1.intro,
+h1.description,
+h1.projects {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(72, 61, 139);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: left; /* Ensures left alignment */
+}
+
+/* Text Content */
+p,
+h2.description {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(134, 133, 133);
+    text-align: left; /* Fixes alignment */
+}
+
+/* Projects Section */
+.projects dl {
+    padding-left: 15px;
+    text-align: left;
+}
+
+dt {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(72, 61, 139);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+dd {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(134, 133, 133);
+    text-align: left; /* Fixes misaligned text */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: rgb(72, 61, 139);
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contact, Skills, and Languages Section Styling */
+.contact,
+.skills,
+.languages {
+    padding: 10px;
+    border: 1px solid rgb(72, 61, 139);
+    border-radius: 5px;
+    background-color: #fff;
+    width: fit-content;
+    text-align: right;
+}
